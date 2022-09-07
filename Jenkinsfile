@@ -36,6 +36,7 @@ pipeline {
                         sh 'node ./frontend/test.js'
 
                     }
+                    
 
                 }
                 stage('Deploy') {
@@ -43,7 +44,7 @@ pipeline {
                         expression { env.GIT_BRANCH == 'origin/main' }
                     }
                     steps {
-                        echo 'Deploying...'
+                        echo 'step not executed...'
                     }
                 } 
 
